@@ -1,0 +1,87 @@
+/* Fonts 
+https://fonts.google.com/specimen/Montserrat*/
+/* Palette
+https://coolors.co/palette/7d84b2-8e9dcc-d9dbf1-f9f9ed-dbf4a7 
+#7D84B2 - purple ish
+#8E9DCC - blue ish
+#D9DBF1 - light purple ish
+#F9F9ED - white ish
+#DBF4A7 - light green ish */
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    background: linear-gradient(#7D84B2, #F9F9ED);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 720px;
+    max-height: 1115px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.hero-container {
+    flex: 1;
+    background: url('images/moirana.jpg') center/cover;
+    padding: 50px;
+    border-radius: 50px 50px 0 0;
+}
+
+h1, h2, h3, h4 {
+    display: inline-block; /* Keeps the element as narrow as needed */
+    text-align: center; /* Centers text inside the element */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #EDF2F4;
+    padding: 5px 20px; /* Adjust padding to fit content better */
+    border-radius: 30px;
+    margin: 15px; /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: fit-content; /* Ensures the width is just enough for the text */
+}
+
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.act-container {
+    flex: 1;
+    background: linear-gradient(#8E9DCC, #D9DBF1);
+    color: black;
+}
+
+.act-container-content {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.guide-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#DBF4A7, #F9F9ED);
+    border-radius: 0 0 50px 50px;
+}
